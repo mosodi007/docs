@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "mintlify dev",
-    "build": "mintlify build"
+    "build": "mintlify export --output export.zip && rm -rf dist && mkdir -p dist && unzip -q export.zip -d dist && rm export.zip"
   },
   "devDependencies": {
     "mintlify": "^4.0.0"
