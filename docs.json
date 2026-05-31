@@ -1,0 +1,72 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "TSCopier Docs",
+  "colors": {
+    "primary": "#0d9488",
+    "light": "#14b8a6",
+    "dark": "#0f766e"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Welcome",
+        "pages": [
+          "introduction"
+        ]
+      },
+      {
+        "group": "Quickstart",
+        "pages": [
+          "quickstart/overview"
+        ]
+      },
+      {
+        "group": "Telegram",
+        "pages": [
+          "telegram/connect",
+          "telegram/channels"
+        ]
+      },
+      {
+        "group": "Brokers",
+        "pages": [
+          "brokers/connect-mt4-mt5",
+          "brokers/reconnect"
+        ]
+      },
+      {
+        "group": "Configuration",
+        "pages": [
+          "configuration/basics",
+          "configuration/lot-size-and-tps"
+        ]
+      },
+      {
+        "group": "Plans and Billing",
+        "pages": [
+          "plans/basic-vs-advanced",
+          "plans/billing"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "pages": [
+          "troubleshooting/faq",
+          "troubleshooting/copier-not-copying"
+        ]
+      },
+      {
+        "group": "Support",
+        "pages": [
+          "support/contact"
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/tscopier-logo-light.svg",
+    "dark": "/logo/tscopier-logo-dark.svg"
+  }
+}
