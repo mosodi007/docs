@@ -1,55 +1,60 @@
-# TSCopier Docs (MVP)
+# TSCopier Docs
 
-User-facing documentation for TSCopier, intended for `https://docs.tscopier.ai`.
+User-facing documentation for TSCopier, hosted at `https://docs.tscopier.ai`.
+
+Built with [VitePress](https://vitepress.dev) — a fast, self-hosted documentation site with no vendor lock-in.
 
 ## Local development
-
-From repo root:
-
-```bash
-npm install
-npm run dev:docs
-```
-
-Or from this folder:
 
 ```bash
 npm install
 npm run dev
 ```
 
+Open [http://localhost:5173](http://localhost:5173).
+
 ## Build
 
-From repo root:
-
 ```bash
-npm run build:docs
+npm run build
+npm run preview
 ```
 
-## CI
+Static output is written to `.vitepress/dist/`.
 
-GitHub Actions runs a docs build on PRs and pushes that touch `apps/docs/**`:
+## Deploy (Netlify)
 
-- `.github/workflows/docs-ci.yml`
+This repo includes a `netlify.toml` that runs `npm run build` and publishes `.vitepress/dist`.
 
-## Deploy checklist
+1. Connect the repo in Netlify
+2. Set custom domain `docs.tscopier.ai`
+3. Confirm HTTPS is enabled
 
-1. Connect `apps/docs` to your docs hosting provider.
-2. Set custom domain `docs.tscopier.ai`.
-3. Confirm the site serves over HTTPS.
-4. In app hosting env vars, set:
-   - `VITE_HELP_DOCS_URL=https://docs.tscopier.ai`
-5. Verify links open correctly from:
-   - App header Help menu (`Documentation`)
-   - Marketing footer (`Documentation`)
+## Content structure
 
-## MVP content map
+| Path | Purpose |
+| --- | --- |
+| `index.md` | Introduction (homepage) |
+| `quickstart/` | Getting started guides |
+| `telegram/` | Telegram connection and channels |
+| `brokers/` | MT4/MT5 setup |
+| `configuration/` | Copier settings |
+| `plans/` | Subscription and billing |
+| `troubleshooting/` | FAQ and debugging |
+| `support/` | Contact support |
+| `public/` | Static assets (images, logos, favicon) |
+| `.vitepress/config.ts` | Site navigation and theme |
 
-- Introduction
-- Quickstart
-- Telegram setup
-- Broker setup
-- Configuration basics
-- Plans and billing
-- Troubleshooting FAQ
-- Contact support
+## Adding a page
+
+1. Create a `.md` file under the appropriate folder
+2. Add frontmatter with `title` and `description`
+3. Register the page in `.vitepress/config.ts` sidebar
+
+## App integration
+
+Set in app hosting env vars:
+
+```
+VITE_HELP_DOCS_URL=https://docs.tscopier.ai
+```
