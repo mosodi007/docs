@@ -93,5 +93,9 @@ export default defineConfig({
     },
 
     outline: { level: [2, 3] },
+
+    search: {
+      provider: "local",
+    },
   },
 });
