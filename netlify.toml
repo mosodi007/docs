@@ -1,6 +1,8 @@
 [build]
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = ".vitepress/dist"
 
 [build.environment]
   NODE_VERSION = "20"
+  # Netlify sets NODE_ENV=production, which skips devDependencies (vitepress).
+  NPM_CONFIG_PRODUCTION = "false"
