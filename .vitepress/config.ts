@@ -15,7 +15,7 @@ export default defineConfig({
       light: "/logo/tscopier-logo-light.svg",
       dark: "/logo/tscopier-logo-dark.svg",
     },
-    siteTitle: "TSCopier Docs",
+    siteTitle: "",
 
     nav: [
       { text: "Quickstart", link: "/quickstart/overview" },

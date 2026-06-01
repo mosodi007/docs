@@ -17,9 +17,13 @@ This is the fastest path to go live with TSCopier.
 
 Go to **Channels** and connect your Telegram account with phone, code, and (if enabled) 2FA.
 
+![Connect Telegram](/images/connect-telegram.svg)
+
 ## Step 2: Connect your broker account
 
 Go to **Account & Configuration**, then add your MT4/MT5 account and verify it is active.
+
+![Connect trading account](/images/connect-trading-account.svg)
 
 ## Step 3: Add channels and configure copier rules
 
@@ -29,7 +33,7 @@ Add your channels in **Channels**, link them to your broker account, then review
 - TP splits
 - allowed/ignored instructions
 
-![Channels overview](/images/channels-overview.svg)
+![Channels overview](/images/configure-channel.svg)
 
 ## Tips
 

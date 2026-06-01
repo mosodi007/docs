@@ -15,6 +15,8 @@ If channels are active but trades are not executing, a broker connection issue i
 
 ## Recovery steps
 
+![Broker reconnect](/images/broker-reconnect.svg)
+
 1. Open **Account & Configuration**
 2. Find the affected broker account
 3. Use reconnect action and re-enter credentials if requested
